@@ -1,0 +1,16 @@
+[package]
+name = "transactions"
+version = "0.1.0"
+authors = ["dhy1996 <dhy1996@live.com.sg>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv = "1.1.6"
+serde = { version  = "1.0.126", features = ["derive"] }
+structopt = "0.3.21"
+thiserror = "1.0.26"
+
+[dev-dependencies]
+assert_cmd = "1.0.7"
