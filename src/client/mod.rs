@@ -190,7 +190,6 @@ impl Client {
         Ok(())
     }
 
-    /// Panics if transaction id is already being disputed
     fn insert_dispute(&mut self, id: TransactionId) -> Result<(), TransactionError> {
         if self.disputes.contains(&id) {
             return Err(TransactionError::DuplicateTransaction(id));
